@@ -67,7 +67,7 @@ window.login= function(e) {
       // Store the authenticated user's UID in localStorage
       localStorage.setItem("uid", success.user.uid);
 
-      window.location.replace('dashboard.html')
+      window.location.replace('index.html')
      // localStorage.setItem(success,user,uid)
       
     })

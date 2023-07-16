@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="login.css">
+	<title>Novess Login</title>
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+		
+			<div class="signup">
+				<label for="chk" aria-hidden="true">Register</label>
+					<form onsubmit="signup(event)">
+						<input type="text" id="register-carnum" name="" placeholder="Car Plate No." required="">
+						<input type="text" id="register-email" name="" placeholder="Email" required="">
+						<input type="password" id="register-password" name="" placeholder="Password" required="">
+						<button id="register-btn" value="Sign Up">Register</button>
+					</form>
+			</div>
+		
+			<div class="login">
+				<label for="chk" aria-hidden="true">Login</label>
+				<form onsubmit="login(event)">
+					<input type="text" id="login-email" name="" placeholder="Email" required="">
+					<input type="password" id="login-password" name="" placeholder="Password" required="">
+					<button id="login-btn">Login</button>
+				</form>
+			</div>
+		</div>
+</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js"></script>
+	<script type = "module" src="login.js"></script>
+</html>
